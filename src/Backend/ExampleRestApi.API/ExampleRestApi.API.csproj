@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.7" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Shared\ExampleRestApi.Communication\ExampleRestApi.Communication.csproj" />
+    <ProjectReference Include="..\..\Shared\ExampleRestApi.Exceptions\ExampleRestApi.Exceptions.csproj" />
+    <ProjectReference Include="..\ExampleRestApi.Application\ExampleRestApi.Application.csproj" />
+  </ItemGroup>
+
+</Project>
